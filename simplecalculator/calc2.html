@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    input[type="number"] {
+      width: 200px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <input type="number" id="inputNumber" placeholder="Enter a number">
+  <br>
+  <button onclick="calculate()">Calculate</button>
+  <br>
+  <p id="result"></p>
+
+  
+  <script>
+    function calculate() {
+      var input = document.getElementById('inputNumber').value;
+      var result = input * 2; 
+
+      document.getElementById('result').innerText = "Result: " + result;
+    }
+    
+  </script>
+</body>
+</html>
